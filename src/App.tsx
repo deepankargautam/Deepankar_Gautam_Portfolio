@@ -6,6 +6,7 @@ import Experience from './components/Experience';
 import Skills from './components/Skills';
 import Education from './components/Education';
 import Contact from './components/Contact';
+import Works from './components/Works';
 import photo from './photo.png'
 function App() {
   return (
@@ -32,6 +33,7 @@ function App() {
         <About />
         <Experience />
         <Skills />
+        <Works />
         <Education />
         <Contact />
       </main>
