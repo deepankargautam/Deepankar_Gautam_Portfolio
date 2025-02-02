@@ -33,7 +33,7 @@ const Contact = () => {
             </div>
           </div>
           <div>
-            <form className="space-y-4">
+            {/* <form className="space-y-4">
               <div>
                 <label htmlFor="name" className="block text-gray-400 mb-2">Name</label>
                 <input
@@ -64,7 +64,7 @@ const Contact = () => {
               >
                 Send Message
               </button>
-            </form>
+            </form> */}
           </div>
         </div>
       </div>

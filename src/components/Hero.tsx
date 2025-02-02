@@ -1,6 +1,8 @@
 import React from 'react';
-import { ArrowRight } from 'lucide-react';
+import { ArrowRight, Download } from 'lucide-react'; // Import the Download icon
 import profileImage from "../assets/photo.png";
+import resume from "../assets/Deepankar Gautam.pdf"; // Import the resume file
+
 const Hero = () => {
   return (
     <section className="min-h-screen flex items-center justify-center pt-16">
@@ -23,12 +25,21 @@ const Hero = () => {
             Experienced software engineer specializing in Java, Spring Boot, and React.js with a focus on
             microservices architecture and full-stack development.
           </p>
-          <a
-            href="#contact"
-            className="inline-flex items-center px-6 py-3 bg-blue-500 hover:bg-blue-600 rounded-full transition-colors"
-          >
-            Get in touch <ArrowRight className="ml-2" size={20} />
-          </a>
+          <div className="flex gap-4">
+            <a
+              href="#contact"
+              className="inline-flex items-center px-6 py-3 bg-blue-500 hover:bg-blue-600 rounded-full transition-colors"
+            >
+              Get in touch <ArrowRight className="ml-2" size={20} />
+            </a>
+            <a
+              href={resume}
+              download="Deepankar_Gautam_Resume.pdf"
+              className="inline-flex items-center px-6 py-3 bg-blue-500 hover:bg-blue-600 rounded-full transition-colors"
+            >
+              Download Resume <Download className="ml-2" size={20} />
+            </a>
+          </div>
         </div>
       </div>
     </section>
