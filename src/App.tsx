@@ -97,7 +97,7 @@ function App() {
               <Phone size={24} />
             </a>
           </div>
-          <p className="text-center mt-4 text-gray-400">© 2024 Deepankar Gautam. All rights reserved.</p>
+          <p className="text-center mt-4 text-gray-400">©  2024 Deepankar Gautam. All rights reserved.</p>
         </div>
       </footer>
     </div>
