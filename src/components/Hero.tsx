@@ -1,6 +1,6 @@
 import React from 'react';
 import { ArrowRight } from 'lucide-react';
-
+import profileImage from "../assets/photo.png";
 const Hero = () => {
   return (
     <section className="min-h-screen flex items-center justify-center pt-16">
@@ -8,7 +8,7 @@ const Hero = () => {
         <div className="flex flex-col items-center text-center">
           <div className="w-48 h-48 rounded-full overflow-hidden mb-8">
             <img
-              src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?fit=crop&w=300&h=300"
+              src={profileImage}
               alt="Deepankar Gautam"
               className="w-full h-full object-cover"
             />
