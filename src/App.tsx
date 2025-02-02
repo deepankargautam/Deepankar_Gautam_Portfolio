@@ -6,7 +6,8 @@ import Experience from './components/Experience';
 import Skills from './components/Skills';
 import Education from './components/Education';
 import Contact from './components/Contact';
-
+import Works from './components/Works';
+import photo from './photo.png'
 function App() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-900 to-gray-800 text-white">
@@ -32,6 +33,7 @@ function App() {
         <About />
         <Experience />
         <Skills />
+        <Works />
         <Education />
         <Contact />
       </main>
@@ -39,10 +41,10 @@ function App() {
       <footer className="bg-gray-900 py-8">
         <div className="container mx-auto px-6">
           <div className="flex justify-center space-x-6">
-            <a href="https://github.com/deepankar-gautam" className="hover:text-blue-400 transition-colors">
+            <a href="https://github.com/deepankargautam" className="hover:text-blue-400 transition-colors">
               <Github size={24} />
             </a>
-            <a href="https://linkedin.com/in/deepankar-gautam" className="hover:text-blue-400 transition-colors">
+            <a href="https://www.linkedin.com/in/deepankar-gautam-22347615b/" className="hover:text-blue-400 transition-colors">
               <Linkedin size={24} />
             </a>
             <a href="mailto:deepankargautam@1998.com" className="hover:text-blue-400 transition-colors">
@@ -52,7 +54,7 @@ function App() {
               <Phone size={24} />
             </a>
           </div>
-          <p className="text-center mt-4 text-gray-400">© 2024 Deepankar Gautam. All rights reserved.</p>
+          <p className="text-center mt-4 text-gray-400">© 2024  Deepankar Gautam. All rights reserved.</p>
         </div>
       </footer>
     </div>
