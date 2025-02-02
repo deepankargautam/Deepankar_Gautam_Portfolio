@@ -39,10 +39,10 @@ function App() {
       <footer className="bg-gray-900 py-8">
         <div className="container mx-auto px-6">
           <div className="flex justify-center space-x-6">
-            <a href="https://github.com/deepankar-gautam" className="hover:text-blue-400 transition-colors">
+            <a href="https://github.com/deepankargautam" className="hover:text-blue-400 transition-colors">
               <Github size={24} />
             </a>
-            <a href="https://linkedin.com/in/deepankar-gautam" className="hover:text-blue-400 transition-colors">
+            <a href="https://www.linkedin.com/in/deepankar-gautam-22347615b/" className="hover:text-blue-400 transition-colors">
               <Linkedin size={24} />
             </a>
             <a href="mailto:deepankargautam@1998.com" className="hover:text-blue-400 transition-colors">
