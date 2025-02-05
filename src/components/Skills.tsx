@@ -10,7 +10,7 @@ const skillCategories = [
       { 
         name: "Java", 
         icon: "☕",
-        details: "• Developed microservices using Spring Boot\n• Implemented RESTful APIs\n• Created banking applications\n• Worked with Java 8+ features"
+        details: "• Developed microservices using Spring Boot \n• Implemented RESTful APIs\n• Created banking applications\n• Worked with Java 8+ features"
       },
       { 
         name: "MySQL", 
