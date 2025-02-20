@@ -93,12 +93,12 @@ const FloatingIcons = () => (
 );
 const Hero = () => {
   return (
-    <section className="min-h-screen flex items-center justify-center pt-16 gradient-bg relative overflow-hidden">
+    <section className="min-h-screen flex items-center justify-center pt-0 gradient-bg relative overflow-hidden">
       <CodeEffect />
       <FloatingIcons />
-      <div className="container mx-auto px-6 relative z-10">
+      <div className="container mx-auto px-1 relative z-10">
         <div className="flex flex-col items-center text-center">
-          <div className="relative w-48 h-48 mb-8 animate-float">
+          <div className="relative w-48 h-48 mb-1 animate-float">
             <div className="absolute inset-0 bg-blue-500 rounded-full opacity-20 blur-xl"></div>
             <div className="w-48 h-48 rounded-full overflow-hidden relative z-10 glow-on-hover">
               <img
@@ -108,45 +108,45 @@ const Hero = () => {
               />
             </div>
           </div>
-          <h1 className="text-5xl font-bold mb-4 typing-effect">
+          <h1 className="text-2xl font-bold mb-1 typing-effect">
             <span className="bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
               Deepankar Gautam
             </span>
           </h1>
-          <h2 className="text-2xl text-gray-300 mb-6 typing-effect typing-effect-line" style={{ animationDelay: '1s' }}>
+          <h2 className="text-2xl text-gray-300 mb-1 typing-effect typing-effect-line" style={{ animationDelay: '1s' }}>
             Senior Software Engineer
           </h2>
         
-            <p className="typing-effect-line" style={{ animationDelay: '2s' }}>
+            <p className="typing-effect-line text-[#a9b7c6]" style={{ animationDelay: '2s' }}>
               Experienced software engineer specializing in Java, Spring Boot, and React.js
             </p>
-            <p className="typing-effect-line" style={{ animationDelay: '2s' }}>
+            <p className="typing-effect-line text-[#a9b7c6]" style={{ animationDelay: '2s' }}>
              Java, Spring Boot, and React.js
             </p>
-            <p className="typing-effect-line" style={{ animationDelay: '3s' }}>
+            <p className="typing-effect-line text-[#a9b7c6]" style={{ animationDelay: '3s' }}>
               with a focus on microservices architecture and full-stack development.
             </p>
-            <p className="typing-effect-line" style={{ animationDelay: '3s' }}>
+            <p className="typing-effect-line text-[#a9b7c6]" style={{ animationDelay: '3s' }}>
              full-stack development.
             </p>
-            <p className="typing-effect-line" style={{ animationDelay: '4s' }}>
+            <p className="typing-effect-line text-[#a9b7c6]" style={{ animationDelay: '4s' }}>
               Proven ability to design and implement high-performance applications
             </p>
-            <p className="typing-effect-line" style={{ animationDelay: '5s' }}>
+            <p className="typing-effect-line text-[#a9b7c6]" style={{ animationDelay: '5s' }}>
               while collaborating effectively in cross-functional teams.
             </p>
 
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <div style={{marginTop:"10px"}} className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
               href="#contact"
-              className="inline-flex items-center px-6 py-3 bg-blue-500 hover:bg-blue-600 rounded-full transition-all transform hover:scale-105 hover:shadow-lg glow-on-hover"
+              className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-blue-400 to-purple-500 hover:bg-blue-600 rounded-full transition-all transform hover:scale-105 hover:shadow-lg glow-on-hover"
             >
               Get in touch <ArrowRight className="ml-2" size={20} />
             </a>
             <a
               href={resume}
               download="Deepankar_Gautam_Resume.pdf"
-              className="inline-flex items-center px-6 py-3 bg-blue-500 hover:bg-blue-600 rounded-full transition-colors"
+              className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-blue-400 to-purple-500 hover:bg-blue-600 rounded-full transition-all transform hover:scale-105 hover:shadow-lg glow-on-hover"
             >
               Download Resume <Download className="ml-2" size={20} />
             </a>
