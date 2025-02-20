@@ -123,9 +123,6 @@ const Hero = () => {
             <p className="typing-effect-line text-[#a9b7c6]" style={{ animationDelay: '2s' }}>
               Java, Spring Boot, and React.js
             </p>
-            <p className="typing-effect-line text-[#a9b7c6]" style={{ animationDelay: '2s' }}>
-             Java, Spring Boot, and React.js
-            </p>
             <p className="typing-effect-line text-[#a9b7c6]" style={{ animationDelay: '3s' }}>
               with a focus on microservices architecture and full-stack development.
             </p>
