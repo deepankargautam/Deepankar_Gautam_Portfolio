@@ -16,6 +16,46 @@ const experiences = [
       'Worked on user management features like user creation, modification, and password regeneration',
       'Participated in the release process, debugging, and ensuring smooth deployment on WebSphere server',
     ],
+    projects: [
+      {
+        name: 'ITRADE Dashboard',
+        technologies: ['Java', 'JSP'],
+        databases: ['Oracle SQL'],
+        webServer: 'WebLogic',
+        tools: ['Eclipse', 'Git', 'SVN'],
+        description: [
+          'Enhanced the User Interface (UI) and User Experience (UX) of the ITRADE Dashboard, ensuring a seamless and efficient user interaction.',
+          'Integrated ApexCharts for dynamic and interactive transaction visualizations, allowing users to analyze trade finance data in real-time.',
+          'Developed and optimized RESTful APIs to improve data communication and ensure smooth data rendering for the dashboard, significantly enhancing user experience.',
+          'Collaborated closely with cross-functional teams to align dashboard features with business objectives and end-user requirements.'
+        ],
+      },
+      {
+        name: 'Admin Portal',
+        technologies: ['Java', 'Spring Boot'],
+        tools: ['Eclipse', 'VSCode', 'SVN'],
+        description: [
+          'Developed the "Admin Portal" banking dashboard using React and Spring Boot for the trade finance sector, enabling efficient management and monitoring of transactions.',
+          'Implemented secure user authentication and role-based access control to ensure data protection and user-specific interface customization.',
+          'Designed and developed responsive and intuitive front-end interfaces using React to enhance user engagement and streamline administrative tasks.',
+          'Integrated various banking APIs and data visualizations to provide actionable insights, helping stakeholders make informed decisions based on real-time data.'
+        ],
+      },
+      {
+        name: 'Customer Onboarding Portal Module',
+        technologies: ['Java', 'Spring Boot'],
+        webServer: 'WebSphere',
+        tools: ['Eclipse', 'SVN'],
+        description: [
+          'Developed a robust customer onboarding module as part of the trade finance service, automating and streamlining the customer registration and approval process.',
+          'Leveraged Java and Spring Boot for backend development, ensuring scalability, reliability, and efficient data processing for high-volume user registrations.',
+          'Integrated real-time data validation and verification checks, reducing manual intervention and improving operational efficiency.',
+          'Implemented secure login and user data management systems, ensuring compliance with regulatory standards for banking applications.',
+          'Worked with stakeholders to tailor the onboarding process, providing a seamless user experience and accelerating the customer service workflow.'
+        ],
+      },
+    ],
+    
   },
   {
     company: 'Cyient Limited',
@@ -26,6 +66,38 @@ const experiences = [
       'Created grooming sheets and collaborated using Agile methodologies',
       'Implemented CI/CD pipelines using Git, GitHub, and Jenkins',
       'Managed project documentation using Confluence',
+    ],
+    projects: [
+      {
+        name: 'Data Normalization',
+        technologies: ['Java','Spring Boot', 'RESTful web services','AWS–EC2', 'AWS–EMR'],
+        databases: ['PostgreSQL with PostGIS'],
+        webServer: 'Apache Tomcat',
+        tools: ['Eclipse', 'IntelliJ', 'Git', 'Confluence', 'Docker'],
+        description: [
+          'Created rules to detect violations in features (e.g., Road Elements, Normal Intersections) using Apache Crunch for bulk data processing from HBase.',
+          'Developed REST APIs in the MDS-Content-Refresher module to handle feature creation, modification, and deletion based on PDS Query violations.',
+          'Developed Java-based QA rules for proactive detection and correction of data anomalies in real-time production environments.',
+          'Conducted comprehensive unit testing using JUnit and Mocking to guarantee the reliability of software solutions.'
+        ],
+      },
+      {
+        name: 'Cascade',
+        technologies: ['Java'],
+        tools: ['IntelliJ', 'Git', 'GitHub', 'Confluence'],
+        description: [
+          'Designed a Java-based Handler to autonomously rectify inaccurately populated data, enhancing efficiency in addressing operator errors across various applications.'
+        ],
+      },
+      {
+        name: 'Speedily Tool',
+        technologies: ['React', 'TypeScript', 'NodeJS'],
+        tools: ['IntelliJ', 'Git', 'GitHub', 'Confluence'],
+        description: [
+          'Developed a web-based speed limit information editor using React and Node.js.',
+          'Optimized tool performance and user interface while implementing automation features for enhanced efficiency in the speed limit moderation process.'
+        ],
+      },
     ],
   },
 ];
@@ -130,8 +202,25 @@ const ExperienceCard = ({ experience, index }) => {
           </motion.div>
         ))}
       </motion.div>
-
+      
       <motion.div variants={itemVariants} className="text-[#cc7832] mt-4">{'}'}</motion.div>
+      <h3 className="company-name text-xl font-bold text-[#cc7832]">
+            <span className="text-[#ffc66d]">Projects Done In</span> {experience.company}
+          </h3>
+          {experience.projects.map((project, idx) => (
+  <div key={idx} className="mt-4">
+    <span className="text-[#cc7832] font-bold">{project.name}</span>
+    <p className="text-lg font-semibold text-[#56b6c2]"><strong  className="text-[#9876aa]">Technologies:</strong> {project.technologies.join(", ")}</p>
+              {project.databases && <p className="text-lg font-semibold text-[#56b6c2]"><strong  className="text-[#9876aa]">Databases:</strong> {project.databases.join(", ")}</p>}
+              {project.webServer && <p className="text-lg font-semibold text-[#56b6c2]"><strong  className="text-[#9876aa]">Web Server:</strong> {project.webServer}</p>}
+              <p className="text-lg font-semibold text-[#56b6c2]"><strong  className="text-[#9876aa]">Tools:</strong> {project.tools.join(", ")}</p>
+    <ul className="list-disc pl-5 text-[#a9b7c6]">
+      {project.description.map((desc, i) => (
+        <li key={i}>{desc}</li>
+      ))}
+    </ul>
+  </div>
+))}
     </motion.div>
   );
 };
