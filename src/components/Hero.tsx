@@ -118,7 +118,10 @@ const Hero = () => {
           </h2>
         
             <p className="typing-effect-line text-[#a9b7c6]" style={{ animationDelay: '2s' }}>
-              Experienced software engineer specializing in Java, Spring Boot, and React.js
+              Experienced software engineer specializing in 
+            </p>
+            <p className="typing-effect-line text-[#a9b7c6]" style={{ animationDelay: '2s' }}>
+              Java, Spring Boot, and React.js
             </p>
             <p className="typing-effect-line text-[#a9b7c6]" style={{ animationDelay: '2s' }}>
              Java, Spring Boot, and React.js
