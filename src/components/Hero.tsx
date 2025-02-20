@@ -2,7 +2,7 @@
 import { Download } from 'lucide-react'; // Import the Download icon
 import profileImage from "../assets/photo.png";
 import resume from "../assets/Deepankar Gautam.pdf"; // Import the resume file
-
+import { motion, useAnimation } from 'framer-motion';
 // const Hero = () => {
 //   return (
 //     <section className="min-h-screen flex items-center justify-center pt-16">
@@ -116,12 +116,18 @@ const Hero = () => {
           <h2 className="text-2xl text-gray-300 mb-6 typing-effect typing-effect-line" style={{ animationDelay: '1s' }}>
             Senior Software Engineer
           </h2>
-          <div className="max-w-2xl text-gray-400 mb-8">
+        
             <p className="typing-effect-line" style={{ animationDelay: '2s' }}>
               Experienced software engineer specializing in Java, Spring Boot, and React.js
             </p>
+            <p className="typing-effect-line" style={{ animationDelay: '2s' }}>
+             Java, Spring Boot, and React.js
+            </p>
             <p className="typing-effect-line" style={{ animationDelay: '3s' }}>
               with a focus on microservices architecture and full-stack development.
+            </p>
+            <p className="typing-effect-line" style={{ animationDelay: '3s' }}>
+             full-stack development.
             </p>
             <p className="typing-effect-line" style={{ animationDelay: '4s' }}>
               Proven ability to design and implement high-performance applications
@@ -129,7 +135,7 @@ const Hero = () => {
             <p className="typing-effect-line" style={{ animationDelay: '5s' }}>
               while collaborating effectively in cross-functional teams.
             </p>
-          </div>
+
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
               href="#contact"

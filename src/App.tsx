@@ -7,7 +7,7 @@ import Skills from "./components/Skills";
 import Education from "./components/Education";
 import Contact from "./components/Contact";
 import Works from "./components/Works";
-
+import ChatBot from './components/ChatBot';
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -78,6 +78,9 @@ function App() {
         <Works />
         <Education />
         <Contact />
+        <div className="fixed bottom-4 right-4 z-50">
+        <ChatBot />
+      </div>
       </main>
 
       {/* Footer */}
@@ -100,6 +103,8 @@ function App() {
           <p className="text-center mt-4 text-gray-400">©  2024 Deepankar Gautam. All rights reserved.</p>
         </div>
       </footer>
+
+     
     </div>
   );
 }
