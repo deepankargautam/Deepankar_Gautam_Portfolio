@@ -8,6 +8,7 @@ import Education from "./components/Education";
 import Contact from "./components/Contact";
 import Works from "./components/Works";
 import ChatBot from './components/ChatBot';
+import Hire from './components/Hire';
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -78,6 +79,7 @@ function App() {
         <Works />
         <Education />
         <Contact />
+        <Hire />
         <div className="fixed bottom-4 right-4 z-50">
         <ChatBot />
       </div>
