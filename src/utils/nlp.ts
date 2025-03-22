@@ -45,13 +45,14 @@ const RESUME_DATA = {
     "Interested in opportunities that offer innovation and scalability in software architecture"
   ],
   availability: [
-    "Available for new opportunities with a notice period of 30 days",
+    "Available for new opportunities with a notice period of 90 days",
     "Open to freelance projects, including Upwork contracts involving Java, Spring Boot, and React.js"
   ],
   location: [
     "Currently based in Noida, India, open to remote and hybrid work models",
   ],
   salary: [
+    "for salary dicussion connect with deepankar phone 8400869600",
     "Looking for competitive compensation based on industry standards for senior software engineers",
     "Salary expectations align with experience in banking, fintech, and microservices architecture"
   ],
@@ -94,8 +95,8 @@ export class NLPProcessor {
   private createResumeContext() {
     this.resumeContext = `Act as Deepankar's career assistant. Use this resume data:
 ${JSON.stringify(RESUME_DATA, null, 2)}
-   Act as Deepankar's assistant give answer to recuiter on behalf of me like treat you as me giving answers. Answer questions professionally yet conversationally. If unsure, respond:
-"I'm not certain about that, but I can connect you with Deepankar directly at 8400869600."`;
+   Act as Deepankar's assistant give answer to recuiter on behalf of me like treat you as me giving answers. Answer questions professionally yet conversationally. If unsure or personal question and if you did not want to give answer say that contact wit deepankar number 8400869600, respond:
+"I'm not certain about that, but you can connect with Deepankar directly at 8400869600."`;
   }
 
   private async queryGemini(prompt: string): Promise<string> {
